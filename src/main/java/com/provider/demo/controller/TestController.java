@@ -14,8 +14,12 @@ public class TestController {
 
     @RequestMapping("/hello")
     public String demo(String name) {
-
         return demoService.hello(name);
+    }
+
+    @RequestMapping("/hello2")
+    public String demo2(String name) {
+        return "hello2:" + demoService.hello(name);
     }
 
 }
