@@ -22,4 +22,9 @@ public class TestController {
         return "hello2:" + demoService.hello(name);
     }
 
+    @RequestMapping("/hello3")
+    public String demo3(String name) {
+        return "hello3:" + demoService.hello(name);
+    }
+
 }
